@@ -11,8 +11,8 @@
     <!-- 파비콘 -->
     <!-- 각 종 플러그인과 설정 파일 -->
     <style>
-        ul { list-style: none; }
-        .hd { width: 100%; height:122px; position:absolute; top: 0; 
+    ul { list-style: none; }
+    .hd { width: 100%; height:122px; position:absolute; top: 0; 
     left: 0; z-index:91; }
     .hd_wrap { width: 1200px; margin: 0 auto; }
     .logo { display:block; width: 144px; height: auto; float:left;
@@ -41,6 +41,7 @@
     overflow: hidden; white-space:nowrap; text-overflow: ellipsis; }
     .gnb li .sub li:hover a { color:deepskyblue; }
     .content { clear: both; width: 100%; }
+    .vdo { display:block; width:100%; height:auto; }
     </style>
 </head>
 <body>
@@ -97,27 +98,45 @@
                 </nav>
             </div>
         </header>
-        <div class="menu-banner">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href=""><img src="img/1663631857-BZQKW.png" alt=""></a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href=""><img src="img/1659573629-WGEPN.png" alt=""></a>
-                    </div>
+        <div class="content">
+            <figure class="vs">
+                <video src="vidio/mom.mp4" autoplay muted class="vdo"></video>
+            </figure>
+            <section class="page" id="page1">
+                <div class="page_wrap">
+                    <h2 class="page_tit">당신의 비즈니스에<br>Display가 필요한 순간,<br>WE DISPLAY</h2>
+                    <ul class="lst">
+                        <li class="left">
+                            <iframe width="1220" height="686" src="https://www.youtube.com/embed/b43YTcBvyzY" title="맘스터치 치즈홀릭버거 에멘탈 30" ver" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </li>
+                        <li class="right">
+                            <ul class="ico_lst">
+                                <li>
+                                    <a href="https://www.youtube.com/embed/FnEIQMUwALM" target="vdo2" class="icon1">
+                                        <h3 class="cate_tit">다양한 디스플레이 설치 사례</h3>
+                                        <p class="cate_com">나에게 맞는 디스플레이를
+                                            찾아보세요.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/AQ8l96vxONo" target="vdo2" class="icon2">
+                                        <h3 class="cate_tit">믿을만한 전문 파트너스</h3>
+                                        <p class="cate_com">WE DISPLAY 공식
+                                            파트너사들을 소개 합니다.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/embed/K-X7GNM0Vss" target="vdo2" class="icon3">
+                                        <h3 class="cate_tit">쉽고 빠른 견적 문의</h3>
+                                        <p class="cate_com">온라인으로 쉽고 빠르게
+                                            견적을 받아보세요.</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="swiper-pagination"></div>
-                </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <section class="page menu menu-new">
-            <header class="page-header">
-			                <h2><span>프로모션</h2>
-                <div class="backdrop"><span></span><span></span><span></span></div>
-                <div class="particle"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-			</header>
+            </section>
             <nav class="nav-tabs">
                 <ul>
 							<li class="current"><a href="">전체</a></li>
