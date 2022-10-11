@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맘스터치</title>
+<!-- 메타포 -->
+<!-- 오픈그래프 -->
+<!-- 파비콘 -->
+<link rel="shortcut icon" type="image/x-icon" href="wiz_logo/apple-icon-60x60.png">
+<!-- 각 종 플러그인과 설정 파일 -->
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+<!-- 구형 브라우저 html5태그 인식 -->
+<script src="js/html5shiv.js"></script>
+<!-- 구형 브라우저에서 css animation 인식 -->
+<script src="js/prefixfree.min.js"></script>
+<!-- 구형 브라우저에서 미디어쿼리 인식 -->
+<script src="js/respond.min.js"></script>
+<!-- jquery 플러그인 연결 -->
+<script src="js/jquery-1.11.1.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<style>
+/* header.css */
+.hd { position: fixed;}
+/* content */
+    .vs { clear: both; width: 100%; height: 300px; overflow:  hidden;}
+    .vs img { display: block; width: 100%; height: auto;}
+    .bread {clear: both; width: 100%; line-height: 60px;}
+    .bread_ft{ width: 1200px; margin: 0 auto;}
+    .content {display: none;}
+    .content:target {display: block;}
+    .page { clear:both; width: 100%; }
+    .page::after { content: ""; display: block; clear: both;}
+    .page_wrap { width: 1200px; margin: 0 auto; }
+    
+    /* footer */
+    
+</style>
+<script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var ht = $(window).height();
+        var tp = $(this).scrollTop();
+        
+    });
+});    
+</script>
+</head>
+<body>
+<div class="wrap">
+<header class="hd">
+    <div class="hd_wrap">
+        <a href="" class="logo"><img src="img/logo.png" alt="로고"></a>
+        <nav class="tnb">
+            <a href="login.html">로그인</a>
+            <a href="join.html">회원가입</a>
+        </nav>
+        <nav class="gnb">
+            <ul>
+                <li class="item1">
+                    <a href="" class="main">브랜드스토리</a>
+                    <ul class="sub">
+                        <li><a href="company.html#page1">브랜드 소개</a></li>
+                        <li><a href="company.html#page2">공지사항</a></li>
+                        <li><a href="company.html#page3">광고 영상</a></li>
+                    </ul>
+                </li>
+                <li class="item2">
+                    <a href="" class="main">메뉴</a>
+                    <ul class="sub">
+                        <li><a href="menu.html#page1">전체</a></li>
+                        <li><a href="menu.html#page2">버거</a></li>
+                        <li><a href="menu.html#page3">세트메뉴</a></li>
+                    </ul>
+                </li>
+                <li class="item3">
+                    <a href="" class="main">프로모션</a>
+                    <ul class="sub">
+                        <li><a href="service.html#page1">전체</a></li>
+                        <li><a href="service.html#page2">진행중</a></li>
+                        <li><a href="service.html#page3">종료</a></li>
+                    </ul>
+                </li>
+                <li class="item4">
+                    <a href="" class="main">고객문의</a>
+                    <ul class="sub">
+                        <li><a href="custom.html#page1">자주하는 질문</a></li>
+                        <li><a href="custom.html#page2">Q/A</a></li>
+                        <li><a href="custom.html#page3">게시판</a></li>
+                    </ul>
+                </li>
+                <li class="item5">
+                    <a href="" class="main">매장찾기</a>
+                    <ul class="sub">
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="content" id="page1">
+    <figure class="vs">
+        <img src="img/p_brand_1.jpg" alt="비주얼">
+    </figure>
+    <div class="bread">
+        <div class="bread_ft">
+            <a href="index1.html" class="home">HOME</a> &gt;
+            <select name="sel1" id="sel1" class="sel">
+                <option>브랜드스토리</option>
+                <option value="menu.html#page1">메뉴</option>
+                <option value="service.html#page1">프로모션</option>
+                <option value="custom.html#page1">고객문의</option>
+                <option value="">매장찾기</option>
+            </select> &gt;
+            <select name="sel2" id="sel2" class="sel">
+                <option>브랜드소개</option>
+                <option value="company.html#page2">공지사항</option>
+                <option value="company.html#page3">광고영상</option>
+            </select>
+        </div>
+    </div>
+    <section class="page">
+        <div class="page_wrap">
+            <h2 class="page_title">브랜드 소개</h2>
+        </div>
+    </section>
+</div>
+<div class="content" id="page2">
+    <figure class="vs">
+        <img src="img/p_brand_1.jpg" alt="비주얼">
+    </figure>
+    <div class="bread">
+        <div class="bread_ft">
+            <a href="index1.html" class="home">HOME</a> &gt;
+            <select name="sel3" id="sel3" class="sel">
+                <option>브랜드스토리</option>
+                <option value="menu.html#page1">메뉴</option>
+                <option value="service.html#page1">프로모션</option>
+                <option value="custom.html#page1">고객문의</option>
+                <option value="">매장찾기</option>
+            </select> &gt;
+            <select name="sel4" id="sel4" class="sel">
+                <option>공지사항</option>
+                <option value="company.html#page1">브랜드소개</option>
+                <option value="company.html#page3">광고영상</option>
+            </select>
+        </div>
+    </div>
+    <section class="page">
+        <div class="page_wrap">
+            <h2 class="page_title">공지 사항</h2>
+        </div>
+    </section>
+</div>
+<div class="content" id="page3">
+    <figure class="vs">
+        <img src="img/p_brand_1.jpg" alt="비주얼">
+    </figure>
+    <div class="bread">
+        <div class="bread_ft">
+            <a href="index1.html" class="home">HOME</a> &gt;
+            <select name="sel5" id="sel5" class="sel">
+                <option>브랜드스토리</option>
+                <option value="menu.html#page1">메뉴</option>
+                <option value="service.html#page1">프로모션</option>
+                <option value="custom.html#page1">고객문의</option>
+                <option value="">매장찾기</option>
+            </select> &gt;
+            <select name="sel6" id="sel6" class="sel">
+                <option>광고영상</option>
+                <option value="company.html#page1">브랜드소개</option>
+                <option value="company.html#page2">공지사항</option>
+            </select>
+        </div>
+    </div>
+    <section class="page">
+        <div class="page_wrap">
+            <h2 class="page_title">광고 영상</h2>
+        </div>
+    </section>
+</div>
+<script>
+    var sel1 = document.getElementById("sel1");
+    var sel2 = document.getElementById("sel2");
+    sel1.addEventListener("change", function(){
+        location.href = sel1.value;
+    });
+    sel2.addEventListener("change", function(){
+        location.href = sel2.value;
+    });
+    var sel3 = document.getElementById("sel3");
+    var sel4 = document.getElementById("sel4");
+    sel3.addEventListener("change", function(){
+        location.href = sel3.value;
+    });
+    sel4.addEventListener("change", function(){
+        location.href = sel4.value;
+    });
+    var sel5 = document.getElementById("sel5");
+    var sel6 = document.getElementById("sel6");
+    sel5.addEventListener("change", function(){
+        location.href = sel5.value;
+    });
+    sel6.addEventListener("change", function(){
+        location.href = sel6.value;
+    });
+</script>
+<footer class="ft">
+    <div class="ft_wrap">
+        <div class="ft_logo"><img src="img/logo.png" alt="하단로고"></div>
+        <div class="mid_box">
+            <nav class="fnb">
+                <a href="member01.html">개인정보 처리 방침</a>
+                <a href="member02.html">이용약관</a>
+                <a href="member03.html">이메일무단수집거부</a>
+            </nav>
+            <p class="addr">
+                ㈜맘스터치앤컴퍼니 | 대표이사 | 김동전 사업자등록번호 676-86-00102<br>
+                서울시 강동구 천호대로 1077 이스트센트럴타워 24,25층<br>
+                통신판매업 신고번호 : 제2015-서울강동-0155호<br>
+                대표전화 1661-4205 | 팩스 02-418-0279, 070-4676-0635  
+            </p>
+        </div>
+        <script>
+        function sel_link(sel){
+            location.href = sel.value;
+        }
+        </script>
+    </div>
+</footer>
+</div>
+</body>
+</html>
