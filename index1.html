@@ -19,9 +19,8 @@
 <script src="js/respond.min.js"></script>
 <!-- jquery 플러그인 연결 -->
 <script src="js/jquery-1.11.1.js"></script>
-<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/reset2.css">
 <link rel="stylesheet" href="css/header.css">
-<link rel="stylesheet" href="css/footer.css">
 <style>
 /* header.css */
 
@@ -32,17 +31,17 @@
     .page_tit { text-align: center; font-size:32px; padding-top:1.2em; padding-bottom: 0.8em; }
     .lst { clear:both; width: 1200px; }
     .lst:after { content:""; display:block; clear: both;}
-    .lst li { margin-bottom: 20px; }
+    .lst li { margin-bottom: 40px; }
     .lst li.left { float:left; width: 816px; height: 459px; }
     .lst li.right { float:right; width:350px; height: 459px; }
     .ico_lst { clear:both; width: 100%; overflow:hidden; }
     .ico_lst li a { display:block; background-repeat: no-repeat; 
     background-position:0px center; background-size:auto 80%; 
 padding-left: 55px; }
-    .ico_lst li a.icon1 { background-image: url("icon/free-icon-one-6055946.png"); }
-    .ico_lst li a.icon2 { background-image: url("icon/free-icon-two-6055966.png");}
-    .ico_lst li a.icon3 { background-image: url("icon/free-icon-three-6055984.png"); }
-    .cate_tit { color:#222; font-size:20px; padding-bottom: 0.1em; }
+    .ico_lst li a.icon1 { background-image: url("./img/icon/ico_service_01.svg"); }
+    .ico_lst li a.icon2 { background-image: url("./img/icon/ico_service_02.svg");}
+    .ico_lst li a.icon3 { background-image: url("./img/icon/ico_service_03.svg"); }
+    .cate_tit { color:#222; font-size:20px; padding-bottom: 0.5em; }
     .cate_com { color:#222; font-size:14px; overflow:hidden;
     white-space:nowrap; text-overflow:ellipsis; }
 
@@ -75,73 +74,78 @@ padding-left: 55px; }
 
     /* footer */
     
-</style>
-<script>
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var ht = $(window).height();
-        var tp = $(this).scrollTop();
-        if(tp>=600){
-            $(".hd").css("position","fixed");
-        } else {
-            $(".hd").css("position","absolute");
-        }
-    });
-});    
-</script>
+    </style>
+    <link rel="stylesheet" href="css/footer.css">
+    <script>
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var ht = $(window).height();
+            var tp = $(this).scrollTop();
+            if(tp>=600){
+                $(".hd").css("position","fixed");
+            } else {
+                $(".hd").css("position","absolute");
+            }
+        });
+        $
+        $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
+        $lst1_obj = $(".circle_lst li").clone();
+        $(".circle_lst.lst2").append($lst1_obj);
+    });     
+    </script>
 </head>
 <body>
 <div class="wrap">
-<header class="hd">
-    <div class="hd_wrap">
-        <a href="" class="logo"><img src="img/logo.png" alt="로고"></a>
-        <nav class="tnb">
-            <a href="login.html">로그인</a>
-            <a href="join.html">회원가입</a>
-        </nav>
-        <nav class="gnb">
-            <ul>
-                <li class="item1">
-                    <a href="company.html#page1" class="main">브랜드스토리</a>
-                    <ul class="sub">
-                        <li><a href="company.html#page1">브랜드 소개</a></li>
-                        <li><a href="company.html#page2">공지사항</a></li>
-                        <li><a href="company.html#page3">광고 영상</a></li>
-                    </ul>
-                </li>
-                <li class="item2">
-                    <a href="" class="main">메뉴</a>
-                    <ul class="sub">
-                        <li><a href="menu.html#page1">전체</a></li>
-                        <li><a href="menu.html#page2">버거</a></li>
-                        <li><a href="menu.html#page3">세트메뉴</a></li>
-                    </ul>
-                </li>
-                <li class="item3">
-                    <a href="" class="main">프로모션</a>
-                    <ul class="sub">
-                        <li><a href="service.html#page1">전체</a></li>
-                        <li><a href="service.html#page2">진행중</a></li>
-                        <li><a href="service.html#page3">종료</a></li>
-                    </ul>
-                </li>
-                <li class="item4">
-                    <a href="" class="main">고객문의</a>
-                    <ul class="sub">
-                        <li><a href="custom.html#page1">자주하는 질문</a></li>
-                        <li><a href="custom.html#page2">Q/A</a></li>
-                        <li><a href="custom.html#page3">게시판</a></li>
-                    </ul>
-                </li>
-                <li class="item5">
-                    <a href="" class="main">매장찾기</a>
-                    <ul class="sub">
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header class="hd">
+        <div class="hd_wrap">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="로고"></a>
+            <nav class="tnb">
+                <a href="login.html">로그인</a>
+                <a href="join.html">회원가입</a>
+            </nav>
+            <nav class="gnb">
+                <ul>
+                    <li class="item1">
+                        <a href="company.html#page1" class="main">브랜드스토리</a>
+                        <ul class="sub">
+                            <li><a href="company.html#page1">브랜드 소개</a></li>
+                            <li><a href="company.html#page2">공지사항</a></li>
+                            <li><a href="company.html#page3">광고 영상</a></li>
+                        </ul>
+                    </li>
+                    <li class="item2">
+                        <a href="menu.html#page1" class="main">메뉴</a>
+                        <ul class="sub">
+                            <li><a href="menu.html#page1">전체</a></li>
+                            <li><a href="menu.html#page2">버거</a></li>
+                            <li><a href="menu.html#page3">세트메뉴</a></li>
+                        </ul>
+                    </li>
+                    <li class="item3">
+                        <a href="service.html#page1" class="main">프로모션</a>
+                        <ul class="sub">
+                            <li><a href="service.html#page1">전체</a></li>
+                            <li><a href="service.html#page2">진행중</a></li>
+                            <li><a href="service.html#page3">종료</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4">
+                        <a href="custom.html#page1" class="main">고객문의</a>
+                        <ul class="sub">
+                            <li><a href="custom.html#page1">자주하는 질문</a></li>
+                            <li><a href="custom.html#page2">Q/A</a></li>
+                            <li><a href="custom.html#page3">게시판</a></li>
+                        </ul>
+                    </li>
+                    <li class="item5">
+                        <a href="" class="main">매장찾기</a>
+                        <ul class="sub">
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 <div class="content">
     <figure class="vs">
         <video src="vidio/mom.mp4" autoplay muted loop class="vdo"></video>
