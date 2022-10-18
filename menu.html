@@ -35,6 +35,22 @@
     .content { display:none; }
     .content:target { display:block; }
 
+    .page { clear:both; width: 100%; }
+    #page2 { background-color: rgba(230, 248, 255, 0.5); }
+    .pic_lst { clear:both; width: 100%; padding-bottom: 80px; }
+    .pic_lst:after { content:""; display:block; clear:both; }
+    .pic_lst li { float:left; position:relative; margin-bottom: 40px; }
+    .pic_lst li a { display:block; width: 360px; margin-right: 40px;
+    overflow: hidden; height: 300px; }
+    .pic_lst li a img { display:block; width:600px; margin-left: -120px; transition-duration:0.8s; }
+    .pic_lst li a:hover img { margin-left: 0; }
+    .pic_lst li a .hv_box { width: 360px; height: 300px; color:#fff; opacity:0; position:absolute; top:0; left: 0; z-index:10; transition-duration:0.8s; background-color:transparent; }
+    .pic_lst li a:hover .hv_box { opacity:1; }
+    .pic_tit { position:absolute; top:30px; left: 30px; 
+    text-shadow:0px 0px 3px red; }
+    .pic_com { position:absolute; right:30px; bottom:30px; 
+        text-shadow:0px 0px 3px blue; }
+
     .page_title { padding-top: 1em; }
     .home { color:#333; }
     .to_top { position:fixed; bottom:80px; right:80px; z-index:999; 
@@ -138,6 +154,144 @@
     <section class="page">
         <div class="page_wrap">
             <h2 class="page_title">전체</h2>
+            <ul class="pic_lst">
+                <li>
+                    <a href="">
+                        <img src="img/1663630773-JQZAP.png" alt="맘스터치 야채통통치킨버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">NEW</h3>
+                            <p class="pic_com">야채통통 치킨 버거</p>
+                            <p class="pic_info">가격 : 30000</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1660612192-BOPMR.png" alt="맘스터치 갈릭바베큐버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">NEW</h3>
+                            <p class="pic_com">갈릭 바베큐 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1655341040-HOKQW.png" alt="맘스터치 어메이징매콤마요버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">맘스터치</h3>
+                            <p class="pic_com">어메이징 매콤 마요 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1651127296-ECEIR.png" alt="맘스터치 트리플딥치즈싸이버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">맘스터치</h3>
+                            <p class="pic_com">트리플 딥 치즈 싸이 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1647845660-MZBRZ.png" alt="맘스터치 쉬프림싸이플렉스버거"class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">맘스터치</h3>
+                            <p class="pic_com">쉬프림 싸이 플렉스 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616480109-NHROT.png" alt="맘스터치 싸이플렉스버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">BEST</h3>
+                            <p class="pic_com">싸이 플렉스 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1647844626-SKNGP.png" alt="맘스터치 화이트갈릭싸이버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">맘스터치</h3>
+                            <p class="pic_com">화이트 갈릭 싸이 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1633511562-QIONN.png" alt="맘스터치 텍사스바베큐치킨버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">맘스터치</h3>
+                            <p class="pic_com">텍사스 바베큐 치킨 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616480122-HYWCI.png" alt="맘스터치 양념치킨싸이버거" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">맘스터치</h3>
+                            <p class="pic_com">양념치킨 싸이 버거</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616055174-DMJXT.png" alt="싱글닭강정세트" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">혼자서도 든든하게</h3>
+                            <p class="pic_com">싱글닭강정세트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616055229-UBIKI.png" alt="싱글통다리세트" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">혼자 먹기 좋은</h3>
+                            <p class="pic_com">싱글통다리세트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616055285-POUKD.png" alt="싱글치킨세트" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">혼자서도 푸짐하게</h3>
+                            <p class="pic_com">싱글치킨세트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616055368-MHNJU.png" alt="커플떡강정세트" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">둘이서 든든하게</h3>
+                            <p class="pic_com">커플떡강정세트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616055444-JLUYK.png" alt="커플롱다리ㅣ세트" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">둘이 먹기 좋은</h3>
+                            <p class="pic_com">커플롱다리세트</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/1616055529-HTPZT.png" alt="커플치킨세트" class="pic">
+                        <div class="hv_box">
+                            <h3 class="pic_tit">둘이서 푸짐하게</h3>
+                            <p class="pic_com">커플치킨세트</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
         </div>
     </section>
 </div>
